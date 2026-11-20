@@ -61,8 +61,13 @@ BINGO-BD/
 ├── requirements.txt            # Pinned dependencies (pygame, pytest)
 ├── pytest.ini                  # Pytest configuration
 ├── benchmark.py                # Automated AI tournament benchmarking suite
-├── BENCHMARK_REPORT.md         # Detailed empirical evaluation report
 ├── README.md                   # Full documentation & walkthrough
+├── .gitignore                  # Keeps caches (__pycache__, .pytest_cache) out of git
+│
+├── docs/                       # Project documents (not loaded by the game)
+│   ├── BINGO_BD_PRD_v1.0.pdf           # Product requirements
+│   ├── BINGO-BD Game UI Concept Sheet.png  # Visual design reference
+│   └── BENCHMARK_REPORT.md             # AI evaluation report
 │
 ├── core/                       # Pure-Python Game Engine (NO Pygame imports)
 │   ├── __init__.py
@@ -89,7 +94,9 @@ BINGO-BD/
 │   ├── settings_view.py        # Settings Screen (sound toggle, volume, AI speed)
 │   └── stats_view.py           # Statistics Screen (records, win rates, safe reset)
 │
-├── data/
+├── data/                       # Persistence code + local JSON files
+│   ├── settings_manager.py     # Load/save settings (atomic writes)
+│   ├── stats_manager.py        # Load/save match statistics (atomic writes)
 │   ├── statistics.json         # Cumulative win/loss records & match history
 │   ├── settings.json           # User preferences
 │   └── benchmark_results.json  # Tournament metrics output
@@ -234,7 +241,7 @@ Execute the automated tournament comparison:
 ```bash
 python benchmark.py
 ```
-This runs 300 balanced matches (100 per pairing; change it with `--games N`) across all three pairings. It uses the same AI configs as the game, logs win rates and mean / p95 / max decision latencies, checks the PRD latency budgets, and updates `data/benchmark_results.json`. See [BENCHMARK_REPORT.md](BENCHMARK_REPORT.md) for full academic details.
+This runs 300 balanced matches (100 per pairing; change it with `--games N`) across all three pairings. It uses the same AI configs as the game, logs win rates and mean / p95 / max decision latencies, checks the PRD latency budgets, and updates `data/benchmark_results.json`. See [docs/BENCHMARK_REPORT.md](docs/BENCHMARK_REPORT.md) for full academic details.
 
 ---
 
@@ -255,4 +262,4 @@ This runs 300 balanced matches (100 per pairing; change it with `--games N`) acr
 
 1. **Local Desktop Only:** Designed specifically for Windows/desktop single-process execution; online multiplayer and cloud saves were intentionally excluded per the PRD specification.
 2. **Perfect Information Search:** Both boards are visible in Version 1.0, treating the game as a perfect-information turn-based adversarial search problem.
-3. **MCTS Rollout Variance:** Every call marks both boards, so *uniform* random rollouts are very noisy. In v1.0 they made "Hard" weaker than "Easy". v1.1 uses the PRD-sanctioned heuristic-biased (epsilon-greedy) rollouts, which restore the intended Easy < Medium < Hard progression (see BENCHMARK_REPORT.md).
+3. **MCTS Rollout Variance:** Every call marks both boards, so *uniform* random rollouts are very noisy. In v1.0 they made "Hard" weaker than "Easy". v1.1 uses the PRD-sanctioned heuristic-biased (epsilon-greedy) rollouts, which restore the intended Easy < Medium < Hard progression (see docs/BENCHMARK_REPORT.md).

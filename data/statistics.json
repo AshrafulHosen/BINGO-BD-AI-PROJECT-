@@ -1,10 +1,10 @@
 {
-  "total_matches": 11,
+  "total_matches": 13,
   "human_wins": 0,
   "ai_wins": 5,
   "player_1_wins": 2,
   "player_2_wins": 5,
-  "draws": 4,
+  "draws": 6,
   "by_difficulty": {
     "EASY": {
       "matches": 1,
@@ -26,6 +26,26 @@
     }
   },
   "recent_history": [
+    {
+      "timestamp": "2026-11-21 01:10:47",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 21,
+      "lines_p1": 6,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-21 01:09:47",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 21,
+      "lines_p1": 6,
+      "lines_p2": 5
+    },
     {
       "timestamp": "2026-11-20 01:45:38",
       "mode": "HUMAN_VS_AI",

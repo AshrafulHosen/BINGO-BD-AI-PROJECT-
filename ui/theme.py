@@ -2,7 +2,7 @@
 BINGO-BD UI Theme & Rendering Kit
 =================================
 
-Design tokens (colours, type scale) matched to "BINGO-BD Game UI Concept Sheet.png"
+Design tokens (colours, type scale) matched to "docs/BINGO-BD Game UI Concept Sheet.png"
 plus a small resolution-independent rendering layer.
 
 Resolution model

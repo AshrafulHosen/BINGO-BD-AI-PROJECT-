@@ -18,7 +18,7 @@ Design notes
   picks the call that most improves its own lines relative to the
   opponent's; otherwise a uniformly random legal call.  Pure uniform
   rollouts are extremely noisy in this game because every call marks BOTH
-  boards (see BENCHMARK_REPORT.md), so this PRD-sanctioned heuristic bias is
+  boards (see docs/BENCHMARK_REPORT.md), so this PRD-sanctioned heuristic bias is
   what turns MCTS into the strongest agent.
 * Victory is checked after every simulated call; rollouts stop immediately at
   terminal states.  Final action = most-visited root child.
