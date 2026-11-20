@@ -1,0 +1,140 @@
+{
+  "total_matches": 11,
+  "human_wins": 0,
+  "ai_wins": 5,
+  "player_1_wins": 2,
+  "player_2_wins": 5,
+  "draws": 4,
+  "by_difficulty": {
+    "EASY": {
+      "matches": 1,
+      "human_wins": 0,
+      "ai_wins": 1,
+      "draws": 0
+    },
+    "MEDIUM": {
+      "matches": 2,
+      "human_wins": 0,
+      "ai_wins": 2,
+      "draws": 0
+    },
+    "HARD": {
+      "matches": 2,
+      "human_wins": 0,
+      "ai_wins": 2,
+      "draws": 0
+    }
+  },
+  "recent_history": [
+    {
+      "timestamp": "2026-11-20 01:45:38",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "MEDIUM",
+      "winner": "Player 2",
+      "calls_count": 18,
+      "lines_p1": 2,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-20 01:43:23",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 22,
+      "lines_p1": 6,
+      "lines_p2": 6
+    },
+    {
+      "timestamp": "2026-11-19 21:55:27",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 21,
+      "lines_p1": 6,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-19 21:55:00",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "MEDIUM",
+      "winner": "Player 2",
+      "calls_count": 17,
+      "lines_p1": 4,
+      "lines_p2": 6
+    },
+    {
+      "timestamp": "2026-11-19 21:54:10",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Player 1",
+      "calls_count": 19,
+      "lines_p1": 5,
+      "lines_p2": 3
+    },
+    {
+      "timestamp": "2026-11-19 21:53:06",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 20,
+      "lines_p1": 5,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-19 21:52:43",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 21,
+      "lines_p1": 7,
+      "lines_p2": 6
+    },
+    {
+      "timestamp": "2026-11-19 21:52:16",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Player 1",
+      "calls_count": 21,
+      "lines_p1": 5,
+      "lines_p2": 4
+    },
+    {
+      "timestamp": "2026-11-19 21:38:56",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 18,
+      "lines_p1": 4,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-19 21:36:37",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 21,
+      "lines_p1": 4,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-19 21:30:43",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "EASY",
+      "winner": "Player 2",
+      "calls_count": 18,
+      "lines_p1": 4,
+      "lines_p2": 5
+    }
+  ]
+}

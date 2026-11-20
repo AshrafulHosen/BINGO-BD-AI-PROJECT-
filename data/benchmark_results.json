@@ -1,0 +1,97 @@
+{
+  "system_info": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "python_version": "3.13.15",
+    "date": "2026-11-20 01:07:31"
+  },
+  "games_per_pairing": 100,
+  "seeds": {
+    "heuristic_vs_minimax": 1000,
+    "heuristic_vs_mcts": 2000,
+    "minimax_vs_mcts": 3000
+  },
+  "worst_case_latency_ms": {
+    "heuristic": 2.512,
+    "minimax": 31.368,
+    "mcts": 856.796
+  },
+  "latency_budget_ms": {
+    "heuristic": 100.0,
+    "minimax": 1000.0,
+    "mcts": 2000.0
+  },
+  "latency_compliance": {
+    "heuristic": true,
+    "minimax": true,
+    "mcts": true
+  },
+  "configs": {
+    "heuristic": {
+      "difficulty": "EASY"
+    },
+    "minimax": {
+      "difficulty": "MEDIUM",
+      "depth": 2,
+      "time_limit_sec": 1.0
+    },
+    "mcts": {
+      "difficulty": "HARD",
+      "rollouts": 2000,
+      "time_limit_sec": 1.5
+    }
+  },
+  "pairings": [
+    {
+      "pairing": "Heuristic (Easy) vs Minimax d=2 (Medium)",
+      "games_played": 100,
+      "wins_a": 8,
+      "wins_b": 56,
+      "draws": 36,
+      "win_rate_a_pct": 8.0,
+      "win_rate_b_pct": 56.0,
+      "draw_rate_pct": 36.0,
+      "avg_calls_per_game": 20.05,
+      "latency_a_mean_ms": 0.225,
+      "latency_a_p95_ms": 0.41,
+      "latency_a_max_ms": 1.316,
+      "latency_b_mean_ms": 1.858,
+      "latency_b_p95_ms": 3.574,
+      "latency_b_max_ms": 9.063
+    },
+    {
+      "pairing": "Heuristic (Easy) vs MCTS 2000 (Hard)",
+      "games_played": 100,
+      "wins_a": 2,
+      "wins_b": 72,
+      "draws": 26,
+      "win_rate_a_pct": 2.0,
+      "win_rate_b_pct": 72.0,
+      "draw_rate_pct": 26.0,
+      "avg_calls_per_game": 19.98,
+      "latency_a_mean_ms": 0.953,
+      "latency_a_p95_ms": 1.501,
+      "latency_a_max_ms": 2.512,
+      "latency_b_mean_ms": 269.166,
+      "latency_b_p95_ms": 583.203,
+      "latency_b_max_ms": 709.068
+    },
+    {
+      "pairing": "Minimax d=2 (Medium) vs MCTS 2000 (Hard)",
+      "games_played": 100,
+      "wins_a": 3,
+      "wins_b": 36,
+      "draws": 61,
+      "win_rate_a_pct": 3.0,
+      "win_rate_b_pct": 36.0,
+      "draw_rate_pct": 61.0,
+      "avg_calls_per_game": 20.61,
+      "latency_a_mean_ms": 7.602,
+      "latency_a_p95_ms": 13.877,
+      "latency_a_max_ms": 31.368,
+      "latency_b_mean_ms": 277.758,
+      "latency_b_p95_ms": 598.315,
+      "latency_b_max_ms": 856.796
+    }
+  ]
+}
