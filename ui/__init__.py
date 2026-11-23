@@ -1,8 +1,3 @@
-"""
-BINGO-BD UI Package
-Houses presentation layer, widgets, screens, and thematic design components.
-"""
-
 from ui.theme import COLORS, VIRTUAL_WIDTH, VIRTUAL_HEIGHT, init_audio, play_sound
 from ui.widgets import Button, IconButton, BoardCellTile, LetterBadge
 from ui.menu import MainMenuScreen

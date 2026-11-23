@@ -1,10 +1,3 @@
-"""
-BINGO-BD Screen 1: Main Menu & Title Screen
-Procedurally painted school-courtyard backdrop (cached per resolution), outlined
-gradient logo with Bangladesh-flag "O", ribbon subtitle and menu buttons -
-matching panel 1 of the UI concept sheet.
-"""
-
 from __future__ import annotations
 
 import math

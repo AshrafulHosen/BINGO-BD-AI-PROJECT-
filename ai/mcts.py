@@ -1,29 +1,3 @@
-"""
-BINGO-BD Hard AI: Monte Carlo Tree Search (MCTS) with UCT Selection
-Pure Python - NO Pygame imports.
-
-Implements the four canonical phases - Selection (UCT), Expansion,
-Simulation (rollout) and Backpropagation - on top of a compact incremental
-simulator (``FastSim``) so that thousands of playouts fit in the Hard budget.
-
-Design notes
-------------
-* Rewards are in [0, 1] (win = 1, draw = 0.5, loss = 0) so the textbook UCB1
-  constant c = sqrt(2) applies directly.
-* Every node stores the reward from the perspective of the player who *made
-  the move into that node*.  Selection therefore always maximises
-  ``Q + c*sqrt(ln N_parent / N_child)``, which is the sign-adjusted
-  (negamax) form of alternating objectives required by the PRD.
-* Rollouts are epsilon-greedy: with probability ``1 - epsilon`` the mover
-  picks the call that most improves its own lines relative to the
-  opponent's; otherwise a uniformly random legal call.  Pure uniform
-  rollouts are extremely noisy in this game because every call marks BOTH
-  boards (see docs/BENCHMARK_REPORT.md), so this PRD-sanctioned heuristic bias is
-  what turns MCTS into the strongest agent.
-* Victory is checked after every simulated call; rollouts stop immediately at
-  terminal states.  Final action = most-visited root child.
-"""
-
 from __future__ import annotations
 import math
 import random

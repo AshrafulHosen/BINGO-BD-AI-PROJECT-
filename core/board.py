@@ -1,9 +1,3 @@
-"""
-BINGO-BD Core Board Module
-Handles 5x5 board representation, permutations, line indices, and bitmasks.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 import random
 from typing import Tuple, List

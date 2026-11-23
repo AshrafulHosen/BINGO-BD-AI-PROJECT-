@@ -1,9 +1,3 @@
-"""
-BINGO-BD Reusable UI Widgets
-Buttons, panels, B-I-N-G-O letter badges, avatars, toggles, sliders and
-segmented controls - all laid out in design units (see ui/theme.py).
-"""
-
 from __future__ import annotations
 
 import time

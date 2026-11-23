@@ -1,10 +1,10 @@
 {
-  "total_matches": 13,
+  "total_matches": 20,
   "human_wins": 0,
-  "ai_wins": 5,
+  "ai_wins": 7,
   "player_1_wins": 2,
-  "player_2_wins": 5,
-  "draws": 6,
+  "player_2_wins": 10,
+  "draws": 8,
   "by_difficulty": {
     "EASY": {
       "matches": 1,
@@ -13,19 +13,89 @@
       "draws": 0
     },
     "MEDIUM": {
-      "matches": 2,
+      "matches": 4,
       "human_wins": 0,
-      "ai_wins": 2,
-      "draws": 0
+      "ai_wins": 3,
+      "draws": 1
     },
     "HARD": {
-      "matches": 2,
+      "matches": 3,
       "human_wins": 0,
-      "ai_wins": 2,
+      "ai_wins": 3,
       "draws": 0
     }
   },
   "recent_history": [
+    {
+      "timestamp": "2026-11-23 20:20:50",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 20,
+      "lines_p1": 4,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-23 20:19:59",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 20,
+      "lines_p1": 4,
+      "lines_p2": 6
+    },
+    {
+      "timestamp": "2026-11-23 20:19:32",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 20,
+      "lines_p1": 4,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-23 20:19:11",
+      "mode": "AI_VS_AI",
+      "agent_0": "MEDIUM",
+      "agent_1": "HARD",
+      "winner": "Draw",
+      "calls_count": 20,
+      "lines_p1": 5,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-23 19:45:41",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "HARD",
+      "winner": "Player 2",
+      "calls_count": 20,
+      "lines_p1": 4,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-23 19:42:40",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "MEDIUM",
+      "winner": "Draw",
+      "calls_count": 20,
+      "lines_p1": 5,
+      "lines_p2": 5
+    },
+    {
+      "timestamp": "2026-11-23 19:40:10",
+      "mode": "HUMAN_VS_AI",
+      "agent_0": "HUMAN",
+      "agent_1": "MEDIUM",
+      "winner": "Player 2",
+      "calls_count": 17,
+      "lines_p1": 3,
+      "lines_p2": 5
+    },
     {
       "timestamp": "2026-11-21 01:10:47",
       "mode": "AI_VS_AI",

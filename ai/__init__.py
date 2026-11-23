@@ -1,8 +1,3 @@
-"""
-BINGO-BD AI Package
-Exposes unified choose_move interface with difficulty dispatching and robust fallback.
-"""
-
 from __future__ import annotations
 import logging
 from typing import Tuple, Dict, Any, Optional

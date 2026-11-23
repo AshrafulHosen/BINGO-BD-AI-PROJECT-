@@ -1,8 +1,3 @@
-"""
-BINGO-BD Core Package
-Contains board representation, state dataclasses, rules engine, and game controller.
-"""
-
 from core.board import (
     ALL_LINES,
     LINE_MASKS,

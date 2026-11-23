@@ -1,10 +1,3 @@
-"""
-BINGO-BD Medium AI: Depth-Limited Minimax with Alpha-Beta Pruning
-Implements adversarial game tree search with action ordering, terminal state detection,
-and depth-adjusted terminal utility.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 import time
 from typing import Tuple, Dict, Any, Optional, List
@@ -24,17 +17,7 @@ def choose_minimax_move(
     time_limit_sec: float = 1.0,
     seed: Optional[int] = None,
 ) -> Tuple[int, Dict[str, Any]]:
-    """
-    Finds the best legal move using depth-limited Minimax with Alpha-Beta Pruning.
 
-    * Terminal utilities dominate heuristic leaves (+/-100000, adjusted by ply so
-      that quicker wins / slower losses are preferred).
-    * Moves are ordered by ``quick_move_score`` to maximise alpha-beta cutoffs;
-      ties keep that ordering, so the result is deterministic.
-    * If the time budget runs out, the search is aborted and the best *fully
-      evaluated* root move is returned (PRD section 6).  If not even one root
-      move finished, the best-ordered move (heuristic fallback) is returned.
-    """
     start_time = time.perf_counter()
     deadline = start_time + max(0.0, time_limit_sec)
     moves = legal_moves(state)

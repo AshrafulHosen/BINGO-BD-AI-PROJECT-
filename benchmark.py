@@ -1,10 +1,3 @@
-"""
-BINGO-BD AI Benchmarking & Academic Evaluation Suite
-Conducts controlled tournaments between Heuristic, Minimax, and MCTS agents.
-Measures win rates, draw rates, mean decision latency, 95th percentile latency,
-and average moves per game with matched board seeds and balanced turn orders.
-"""
-
 from __future__ import annotations
 import argparse
 import json

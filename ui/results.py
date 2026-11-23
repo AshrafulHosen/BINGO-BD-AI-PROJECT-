@@ -1,9 +1,3 @@
-"""
-BINGO-BD Screen 6: Game Over (Victory / Defeat / Draw)
-Matches panel 6 of the concept sheet: radial rays, falling confetti, golden
-crown, outlined "BINGO!" headline, B-I-N-G-O badges, Play Again / Back to Menu.
-"""
-
 from __future__ import annotations
 
 import math

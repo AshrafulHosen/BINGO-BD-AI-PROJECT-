@@ -1,27 +1,3 @@
-"""
-BINGO-BD UI Theme & Rendering Kit
-=================================
-
-Design tokens (colours, type scale) matched to "docs/BINGO-BD Game UI Concept Sheet.png"
-plus a small resolution-independent rendering layer.
-
-Resolution model
-----------------
-All screens are laid out in a fixed *design space* of 1280 x 720 units
-(``VIRTUAL_WIDTH`` x ``VIRTUAL_HEIGHT``).  At runtime ``set_scale`` is called
-with ``min(window_w / 1280, window_h / 720)`` and every helper in this module
-converts design units to physical pixels *before* drawing.  Nothing is drawn
-small and stretched afterwards, so text and shapes are pixel-crisp at 720p,
-1080p, 1440p and 4K alike.
-
-Anti-aliasing
--------------
-* Text: TrueType hinting at the exact physical pixel size.
-* Rounded rectangles, circles and icons: rendered 3x super-sampled, then
-  ``smoothscale``d down once and cached (keyed by size/colour), so the
-  per-frame cost is a single blit.
-"""
-
 from __future__ import annotations
 
 import math

@@ -1,10 +1,3 @@
-"""
-BINGO-BD Core Rules Engine
-Pure-function implementation of official BINGO-BD game mechanics.
-Implements line detection, terminal condition checks, legal moves, and transitions.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 import numbers
 from typing import List, Tuple, Optional

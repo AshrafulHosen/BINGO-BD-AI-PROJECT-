@@ -1,10 +1,3 @@
-"""
-BINGO-BD Game Controller
-Coordinates game progression, non-blocking AI background threading,
-state-version guards, and turn sequencing across all three game modes.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 import threading
 import time

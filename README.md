@@ -67,7 +67,10 @@ BINGO-BD/
 ├── docs/                       # Project documents (not loaded by the game)
 │   ├── BINGO_BD_PRD_v1.0.pdf           # Product requirements
 │   ├── BINGO-BD Game UI Concept Sheet.png  # Visual design reference
-│   └── BENCHMARK_REPORT.md             # AI evaluation report
+│   ├── BENCHMARK_REPORT.md             # AI evaluation report
+│   ├── BINGO-BD_Final_Report.docx      # Final project report (print version)
+│   ├── BINGO-BD_Presentation.pptx      # Presentation slides (videos embedded)
+│   └── gameplay_videos/                # Sped-up gameplay recordings (.mp4)
 │
 ├── core/                       # Pure-Python Game Engine (NO Pygame imports)
 │   ├── __init__.py

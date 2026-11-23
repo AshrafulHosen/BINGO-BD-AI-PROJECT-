@@ -1,11 +1,3 @@
-"""
-BINGO-BD AI Evaluator
-Implements the official PRD state evaluation function:
-E = 100 * (completed_ai - completed_opp) + 10 * (potential_ai - potential_opp)
-Potential is sum of (marked_cells / 5)^2 for incomplete lines.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 from typing import Tuple
 from core.board import LINE_MASKS

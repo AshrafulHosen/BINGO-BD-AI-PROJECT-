@@ -1,9 +1,3 @@
-"""
-BINGO-BD Screen 2: Game Mode & Difficulty Selection
-Matches panel 2 of the concept sheet: mode cards with icon badge + chevron,
-green-glow selection, and Easy / Medium / Hard difficulty pills.
-"""
-
 from __future__ import annotations
 
 from typing import Tuple, Callable, List, Dict, Any

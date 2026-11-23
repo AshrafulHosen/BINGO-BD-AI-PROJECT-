@@ -1,10 +1,3 @@
-"""
-BINGO-BD Easy AI: One-Step Heuristic Greedy Search
-Evaluates all legal successor states and selects the one maximizing the
-evaluation function.
-Pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 import random
 import time

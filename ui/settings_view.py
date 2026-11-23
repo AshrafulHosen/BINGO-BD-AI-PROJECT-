@@ -1,9 +1,3 @@
-"""
-BINGO-BD Settings Screen
-Sound on/off, master volume, AI move pace and display mode.
-All settings persist automatically (data/settings.json).
-"""
-
 from __future__ import annotations
 
 from typing import Tuple, Callable, Optional

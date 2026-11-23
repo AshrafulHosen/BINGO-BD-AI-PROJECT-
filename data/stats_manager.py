@@ -1,9 +1,3 @@
-"""
-BINGO-BD Statistics Manager
-Handles loading, updating, atomic persistence, and clearing of cumulative match stats.
-Pure Python - resilient to corrupted or missing files.
-"""
-
 from __future__ import annotations
 import copy
 import json

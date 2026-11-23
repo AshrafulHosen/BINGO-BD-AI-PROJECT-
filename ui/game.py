@@ -1,20 +1,3 @@
-"""
-BINGO-BD Screens 3, 4 & 5: Dual-Board Gameplay, Call Feedback and BINGO Progress
-Matches panels 3-5 of the UI concept sheet.
-
-Layout (design units, 1280 x 720 - see ui/theme.py)
-    toolbar           y  12 ..  52
-    player cards      y  62 .. 148   (left 440 | centre 320 | right 440)
-    boards / centre   y 160 .. 704
-
-Interaction
-    * Click an uncalled number on EITHER board (or on the call sheet) to select
-      it - it is highlighted on both boards (PRD UI-03).  Click it again, press
-      "Call Number", or hit Enter/Space to call it.  Esc clears the selection.
-    * After every call a non-blocking popup confirms the number (PRD UI-04).
-      AI progression waits while it is visible; any click / key dismisses it.
-"""
-
 from __future__ import annotations
 
 import math

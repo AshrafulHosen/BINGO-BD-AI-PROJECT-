@@ -1,9 +1,3 @@
-"""
-BINGO-BD Settings Manager
-Persists and manages user settings such as sound toggle, volume, and animation/AI speed.
-Pure Python - resilient to missing/corrupt files.
-"""
-
 from __future__ import annotations
 import json
 import os

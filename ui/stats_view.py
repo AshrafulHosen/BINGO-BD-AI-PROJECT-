@@ -1,9 +1,3 @@
-"""
-BINGO-BD Statistics Screen
-Cumulative records, Human-vs-AI breakdown by difficulty (with win-rate bars),
-recent matches, and a two-step "Clear Stats" confirmation.
-"""
-
 from __future__ import annotations
 
 from typing import Tuple, Callable

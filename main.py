@@ -1,20 +1,3 @@
-"""
-BINGO-BD: Traditional Bangladeshi School Bingo with Strategic AI Opponents
-Main desktop application entry point.
-
-Rendering pipeline
-------------------
-1. The process is made per-monitor DPI aware on Windows *before* SDL starts,
-   so Windows never bitmap-stretches (blurs) the window on 125 % / 150 % /
-   200 % display scaling.
-2. The default window size is chosen from the desktop size and DPI factor
-   (1280x720, 1600x900 or 1920x1080 design sizes x DPI), and the window is
-   freely resizable / F11 full-screen.
-3. Every frame, screens draw directly at the window's *physical* resolution
-   (ui.theme.set_scale) into a letter-boxed 16:9 viewport.  There is no
-   up-scaling step, so text and vector shapes are pixel-sharp at any size.
-"""
-
 from __future__ import annotations
 
 import os

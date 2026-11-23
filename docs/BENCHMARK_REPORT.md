@@ -73,7 +73,7 @@ With uniformly random rollouts, both boards fill at roughly the same rate whatev
 The PRD explicitly allows "legal random calls with optional heuristic bias". v1.1 therefore makes three changes:
 
 1. **ε-greedy rollouts:** 80 % of the time the mover plays the call that maximises *own line progress − opponent line progress* (line weights 1, 2, 4, 8, 40 by cells already marked). Otherwise it plays a uniform random call. This keeps playouts realistic while preserving exploration.
-2. **Incremental bitboard simulator (`FastSim`):** about 10× cheaper per playout than building immutable `GameState` objects, so 2000 rollouts fit in a ~0.3 s average. A test checks it move-for-move against the rules engine on 200 random games.
+2. **Incremental bitboard simulator (`FastSim`):** roughly 3× cheaper per simulation than the v1.0 object-based playouts (≈ 0.13 ms vs ≈ 0.4 ms measured), even though every playout move now scores its candidates. This lets 2000 rollouts fit in a ≈ 0.27 s average. A test checks it move-for-move against the rules engine on 200 random games.
 3. **Correct UCB1 scaling:** rewards are in [0, 1] (win 1, draw 0.5, loss 0), so c = √2 is the textbook constant. Values are stored from the mover's perspective (negamax form). An exact immediate-win check precedes the search.
 
 Final action selection is unchanged: the most-visited root child (PRD §6).

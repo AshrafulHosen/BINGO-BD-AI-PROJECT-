@@ -1,9 +1,3 @@
-"""
-BINGO-BD Core State Module
-Canonical game state representation and enums.
-Immutable and pure Python - NO Pygame imports.
-"""
-
 from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
